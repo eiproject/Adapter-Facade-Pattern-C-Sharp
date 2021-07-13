@@ -4,8 +4,14 @@ using System.Text;
 
 namespace FacadePattern {
   class Milk  {
-    internal void Make() {
-      Console.WriteLine("Making Milk...");
+    internal void TakeMilk() {
+      Console.WriteLine("Taking milk...");
+    }
+    internal void TakeMug() {
+      Console.WriteLine("Taking mug...");
+    }
+    internal void PourToGlass() {
+      Console.WriteLine("Pouring milk...");
     }
   }
 }

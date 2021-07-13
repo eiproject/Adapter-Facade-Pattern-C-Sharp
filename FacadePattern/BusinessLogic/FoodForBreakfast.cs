@@ -15,8 +15,13 @@ namespace FacadePattern {
     }
 
     void IFoodMenus.Prepare() {
-      _milk.Make();
-      _bread.Make();
+      _milk.TakeMilk();
+      _milk.TakeMug();
+      _milk.PourToGlass();
+      _bread.TakeBread();
+      _bread.PutJam();
+      _bread.Roast();
+      _bread.PlaceOnPlate();
       Done();
     }
     void Status() {

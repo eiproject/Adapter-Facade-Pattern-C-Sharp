@@ -4,8 +4,18 @@ using System.Text;
 
 namespace FacadePattern {
   class Bread {
-    internal void Make() {
-      Console.WriteLine("Making Bread...");
+
+    internal void TakeBread() {
+      Console.WriteLine("Take bread...");
+    }
+    internal void PutJam() {
+      Console.WriteLine("Put jam...");
+    }
+    internal void Roast() {
+      Console.WriteLine("Roasting...");
+    }
+    internal void PlaceOnPlate() {
+      Console.WriteLine("Placing on plate...");
     }
   }
 }

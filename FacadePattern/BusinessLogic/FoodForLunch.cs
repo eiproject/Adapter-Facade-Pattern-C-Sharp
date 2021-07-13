@@ -13,8 +13,14 @@ namespace FacadePattern {
       _omelete = omelete;
     }
     void IFoodMenus.Prepare() {
-      _rice.Make();
-      _omelete.Make();
+      _rice.TakeRice();
+      _rice.Wash();
+      _rice.Cook();
+      _rice.Done();
+      _omelete.TakeEgg();
+      _omelete.Fry();
+      _omelete.AddSalt();
+      _omelete.PlaceOnThePlate();
       Done();
     }
     void Status() {

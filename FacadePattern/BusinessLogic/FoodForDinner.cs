@@ -15,9 +15,20 @@ namespace FacadePattern {
       _soup = soup;
     }
     void IFoodMenus.Prepare() {
-      _rice.Make();
-      _coffee.Make();
-      _soup.Make();
+      _rice.TakeRice();
+      _rice.Wash();
+      _rice.Cook();
+      _rice.Done();
+      _coffee.TakeCoffee();
+      _coffee.TakeSugar();
+      _coffee.PourTheWater();
+      _coffee.Stir();
+      _coffee.PlaceOnTable();
+      _soup.TakeVegetable();
+      _soup.Wash();
+      _soup.Boil();
+      _soup.AddFlavor();
+      _soup.PourToBowl();
       Done();
     }
     void Status() {
